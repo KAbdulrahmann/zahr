@@ -30,7 +30,7 @@ const app = express();
 app.use(express.json());
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({policy: "cross-origin"}));
-app.use(cors({ origin: "https://zahr-dashboard.web.app" })); 
+app.use(cors({ origin: "https://zahr-dashboard.web.app/" })); 
 
 app.use(morgan("common"));
 app.use(bodyParser.json());
